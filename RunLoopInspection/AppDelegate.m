@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) NSTimer *testTimer;
 @end
 
 @implementation AppDelegate
@@ -17,6 +17,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    NSLog(@"adding test timer");
+    self.testTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
+                                                     repeats:YES
+                                                       block:^(NSTimer * _Nonnull timer) {
+                                                           NSLog(@"timer fired.");
+                                                       }];
+    NSLog(@"added test timer: %@", self.testTimer);
+
     return YES;
 }
 

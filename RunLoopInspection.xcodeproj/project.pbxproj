@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4DC8A24D54DE3C39AB885C6 /* libPods-RunLoopInspection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F2DEC938E1A7599BD92D78 /* libPods-RunLoopInspection.a */; };
 		EA15E00C1D879D4C00176643 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA15E00B1D879D4C00176643 /* main.m */; };
 		EA15E00F1D879D4C00176643 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA15E00E1D879D4C00176643 /* AppDelegate.m */; };
 		EA15E0121D879D4C00176643 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA15E0111D879D4C00176643 /* ViewController.m */; };
 		EA15E0151D879D4C00176643 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA15E0131D879D4C00176643 /* Main.storyboard */; };
 		EA15E0171D879D4C00176643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA15E0161D879D4C00176643 /* Assets.xcassets */; };
 		EA15E01A1D879D4C00176643 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA15E0181D879D4C00176643 /* LaunchScreen.storyboard */; };
+		EA15E0251D87CF6D00176643 /* Inception.m in Sources */ = {isa = PBXBuildFile; fileRef = EA15E0241D87CF6D00176643 /* Inception.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		104521E21A6DA747C92BF492 /* Pods-RunLoopInspection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunLoopInspection.release.xcconfig"; path = "Pods/Target Support Files/Pods-RunLoopInspection/Pods-RunLoopInspection.release.xcconfig"; sourceTree = "<group>"; };
+		B96DD30A5943A858AE5FB3A7 /* Pods-RunLoopInspection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunLoopInspection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RunLoopInspection/Pods-RunLoopInspection.debug.xcconfig"; sourceTree = "<group>"; };
+		C9F2DEC938E1A7599BD92D78 /* libPods-RunLoopInspection.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RunLoopInspection.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA15E0071D879D4C00176643 /* RunLoopInspection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunLoopInspection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA15E00B1D879D4C00176643 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA15E00D1D879D4C00176643 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +31,8 @@
 		EA15E0161D879D4C00176643 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA15E0191D879D4C00176643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA15E01B1D879D4C00176643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA15E0231D87CF1900176643 /* Inception.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Inception.h; sourceTree = "<group>"; };
+		EA15E0241D87CF6D00176643 /* Inception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Inception.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4DC8A24D54DE3C39AB885C6 /* libPods-RunLoopInspection.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E81E550A22EB0B0F039D08F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9F2DEC938E1A7599BD92D78 /* libPods-RunLoopInspection.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5BBA13694A7086B53801B09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B96DD30A5943A858AE5FB3A7 /* Pods-RunLoopInspection.debug.xcconfig */,
+				104521E21A6DA747C92BF492 /* Pods-RunLoopInspection.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EA15DFFE1D879D4C00176643 = {
 			isa = PBXGroup;
 			children = (
 				EA15E0091D879D4C00176643 /* RunLoopInspection */,
 				EA15E0081D879D4C00176643 /* Products */,
+				A5BBA13694A7086B53801B09 /* Pods */,
+				0E81E550A22EB0B0F039D08F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +85,9 @@
 		EA15E0091D879D4C00176643 /* RunLoopInspection */ = {
 			isa = PBXGroup;
 			children = (
+				EA15E0231D87CF1900176643 /* Inception.h */,
+				EA15E0241D87CF6D00176643 /* Inception.m */,
+				EA15E00B1D879D4C00176643 /* main.m */,
 				EA15E00D1D879D4C00176643 /* AppDelegate.h */,
 				EA15E00E1D879D4C00176643 /* AppDelegate.m */,
 				EA15E0101D879D4C00176643 /* ViewController.h */,
@@ -66,17 +96,8 @@
 				EA15E0161D879D4C00176643 /* Assets.xcassets */,
 				EA15E0181D879D4C00176643 /* LaunchScreen.storyboard */,
 				EA15E01B1D879D4C00176643 /* Info.plist */,
-				EA15E00A1D879D4C00176643 /* Supporting Files */,
 			);
 			path = RunLoopInspection;
-			sourceTree = "<group>";
-		};
-		EA15E00A1D879D4C00176643 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				EA15E00B1D879D4C00176643 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA15E01E1D879D4C00176643 /* Build configuration list for PBXNativeTarget "RunLoopInspection" */;
 			buildPhases = (
+				5270A8E8E6DBEBC9B6DEFAE6 /* [CP] Check Pods Manifest.lock */,
 				EA15E0031D879D4C00176643 /* Sources */,
 				EA15E0041D879D4C00176643 /* Frameworks */,
 				EA15E0051D879D4C00176643 /* Resources */,
+				8F4B29E3A3163D59D820278E /* [CP] Embed Pods Frameworks */,
+				097228BBCDB0E15762B173C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,12 +170,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		097228BBCDB0E15762B173C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RunLoopInspection/Pods-RunLoopInspection-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5270A8E8E6DBEBC9B6DEFAE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8F4B29E3A3163D59D820278E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RunLoopInspection/Pods-RunLoopInspection-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA15E0031D879D4C00176643 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EA15E0121D879D4C00176643 /* ViewController.m in Sources */,
+				EA15E0251D87CF6D00176643 /* Inception.m in Sources */,
 				EA15E00F1D879D4C00176643 /* AppDelegate.m in Sources */,
 				EA15E00C1D879D4C00176643 /* main.m in Sources */,
 			);
@@ -197,6 +270,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -245,6 +319,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -271,6 +346,7 @@
 		};
 		EA15E01F1D879D4C00176643 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B96DD30A5943A858AE5FB3A7 /* Pods-RunLoopInspection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NSWMLDGCEZ;
@@ -283,6 +359,7 @@
 		};
 		EA15E0201D879D4C00176643 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 104521E21A6DA747C92BF492 /* Pods-RunLoopInspection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NSWMLDGCEZ;
@@ -312,6 +389,7 @@
 				EA15E0201D879D4C00176643 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

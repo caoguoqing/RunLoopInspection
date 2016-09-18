@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "Inception.h"
 
 int main(int argc, char * argv[]) {
+
+    inception_runloop();
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
